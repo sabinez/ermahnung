@@ -11,11 +11,21 @@
   <script src="application.js"></script>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <form action="input_text.htm">
+          <p>Agentur/Job<br><input name="agentur" type="text" size="30" maxlength="30"></p>
+          <p>Rechnungsbetrag<br><input name="betrag" type="text" size="30" maxlength="30"></p>
+          <p>Zahlungsziel<br><input name="zahlungsziel" type="text" size="30" maxlength="30"></p>
+          <button type="button" class="btn btn-success">Anlegen</button>
+        </form>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
 
-  <form action="input_text.htm">
-    <input name="eingabe" type="text" size="30" maxlength="30">
-    <button type="button" class="btn btn-success">Success</button>
-  </form>
 
 </body>
 </html>
