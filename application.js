@@ -4,6 +4,16 @@ $(document).ready(function(){
 		alert('To Do');
 	}
 	
-	$('.btn-success').click(clickBtn);
+	$('.btn-success').on('click', clickBtn);
+
+
+	var paid = function(){
+		var row = $(this).parents('tr');
+
+		row.fadeOut(200);
+	}
+
+	$("#noch-offen input[type='checkbox']").on('click', paid);
+
 
 })
