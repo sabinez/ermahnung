@@ -23,7 +23,7 @@ $(document).ready(function(){
 		row.fadeOut(200);
 	}
 
-	$("#noch-offen input[type='checkbox']").on('click', paid);
+	$("#noch-offen").on('click', "input[type='checkbox']", paid);
 
 
 
